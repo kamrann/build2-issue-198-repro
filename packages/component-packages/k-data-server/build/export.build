@@ -1,0 +1,8 @@
+tgt_name = $name($import.target)
+
+$out_root/k-data-server/components/$tgt_name/
+{
+  include ./
+}
+
+export $out_root/k-data-server/components/$tgt_name/$import.target

@@ -1,0 +1,11 @@
+kcomp = data-server
+
+./: lib{$kcomp} file{kmetadata}
+lib{$kcomp}: include/{hxx ixx txx}{**}
+
+file{kmetadata}: liba{$kcomp}
+{{
+  diag gen $>
+  p = $path($>)
+  echo "hello" >$p
+}}

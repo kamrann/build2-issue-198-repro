@@ -1,0 +1,6 @@
+project = k-data-server
+
+using version
+using config
+using install
+using dist
